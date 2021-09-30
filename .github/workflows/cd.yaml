@@ -31,12 +31,11 @@ jobs:
         with:
           kustomize_version: v3.6.1
 
-
       - name: update k8s
         run: |
           cd k8s
           kustomize edit set image goapp=victorpuntel/argocd:${{ github.sha }}
-          cat kustomization.yarml
+          cat kustomization.yaml
 
       - name: commit
         run: |
@@ -46,4 +45,3 @@ jobs:
 
       - name: push
         uses: ad-m/github-push-action@master
-        
