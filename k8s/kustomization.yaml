@@ -9,4 +9,4 @@ namespace: goapp
 images:
 - name: goapp
   newName: victorpuntel/argocd
-  newTag: b067999d580e9a2f9b832fcdebdd23b497f6135b
+  newTag: 6761f72b25ac55efea79c2e330dc9deceb27fa9d
